@@ -1,11 +1,165 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Barlow+Condensed:wght@300;400;600;700;800&display=swap");
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@source "../../app/Livewire/**/*.php";
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Barlow", sans-serif;
+    --font-barlow: "Barlow", sans-serif;
+    --font-condensed: "Barlow Condensed", sans-serif;
+
+    --color-navy: #0a1628;
+    --color-navy-mid: #112244;
+    --color-blue: #1a6fc4;
+    --color-blue-light: #2589e8;
+    --color-sky: #4fb3e8;
+    --color-steel: #b8d4ea;
+    --color-gold: #c9a84c;
+    --color-gold-light: #e8c96b;
+    --color-gray-mid: #8fa5b8;
+    --color-gray-light: #e8eef5;
+    --color-text-dark: #0d1e34;
+    --color-text-body: #2c3e52;
+
+    --animate-fade-up-1: fadeUp 0.7s ease both 0.2s;
+    --animate-fade-up-2: fadeUp 0.7s ease both 0.4s;
+    --animate-fade-up-3: fadeUp 0.7s ease both 0.55s;
+    --animate-fade-up-4: fadeUp 0.7s ease both 0.7s;
+    --animate-fade-up-5: fadeUp 0.7s ease both 0.85s;
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* ── HERO BACKGROUND ── */
+.hero-bg {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(10, 22, 40, 0.95) 0%,
+            rgba(10, 22, 40, 0.7) 50%,
+            rgba(10, 22, 40, 0.85) 100%
+        ),
+        url("https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=80")
+            center/cover no-repeat;
+}
+
+/* ── GRID OVERLAY ── */
+.grid-overlay {
+    background-image:
+        linear-gradient(rgba(74, 163, 232, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(74, 163, 232, 0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+}
+
+/* ── ABOUT IMAGES ── */
+.about-img-main {
+    background: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80")
+        center/cover;
+}
+.about-img-accent {
+    background: url("https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80")
+        center/cover;
+}
+
+/* ── SERVICES CLIP PATH ── */
+.clip-services {
+    clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%);
+}
+
+/* ── VISION CARD ── */
+.vision-card {
+    position: relative;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+.vision-card:hover {
+    transform: translateY(-4px);
+}
+.vision-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    box-shadow: 0 0 30px rgba(79, 179, 232, 0.18);
+}
+.vision-card:hover::before {
+    opacity: 1;
+}
+
+/* ── VALUE PILL ── */
+.value-pill {
+    background: linear-gradient(
+        135deg,
+        rgba(26, 111, 196, 0.15),
+        rgba(79, 179, 232, 0.08)
+    );
+    border: 1px solid rgba(79, 179, 232, 0.25);
+    transition:
+        background 0.3s,
+        border-color 0.3s,
+        transform 0.25s;
+}
+.value-pill:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(26, 111, 196, 0.3),
+        rgba(79, 179, 232, 0.15)
+    );
+    border-color: rgba(79, 179, 232, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ── SLIDESHOW ── */
+.slide {
+    display: none;
+}
+.slide.active {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slide.active.anim-right {
+    animation: slideIn 0.45s ease both;
+}
+.slide.active.anim-left {
+    animation: slideInLeft 0.45s ease both;
+}
+
+/* ── ONGOING CAROUSEL ── */
+#op-track {
+    will-change: transform;
 }
