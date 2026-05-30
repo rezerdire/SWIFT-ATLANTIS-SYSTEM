@@ -65,7 +65,7 @@
                         </div>
                     </div>
 
-                    {{-- Content --}}
+                    {{-- Content ayoko na--}}
                     <div class="bg-navy/80 backdrop-blur-sm flex flex-col justify-center p-10 lg:p-14">
                         <span
                             class="font-condensed text-[64px] font-extrabold text-white/[0.06] leading-none select-none mb-2">
@@ -109,11 +109,11 @@
                 class="flex gap-2">
                 @foreach($slides as $index => $slide)
                     <button @click="
-                            let sd = Alpine.$data(document.querySelector('[x-data*=\'current: 0, total\']'));
-                            sd.go({{ $index }}, {{ $index }} > sd.current ? 'right' : 'left');
-                        " :class="{{ $index }} === (Alpine.$data(document.querySelector('[x-data*=\'current: 0, total\']'))?.current ?? 0)
-                            ? 'bg-blue w-5'
-                            : 'bg-white/20 w-2'" class="h-2 rounded-full transition-all duration-300">
+                                    let sd = Alpine.$data(document.querySelector('[x-data*=\'current: 0, total\']'));
+                                    sd.go({{ $index }}, {{ $index }} > sd.current ? 'right' : 'left');
+                                " :class="{{ $index }} === (Alpine.$data(document.querySelector('[x-data*=\'current: 0, total\']'))?.current ?? 0)
+                                    ? 'bg-blue w-5'
+                                    : 'bg-white/20 w-2'" class="h-2 rounded-full transition-all duration-300">
                     </button>
                 @endforeach
             </div>
