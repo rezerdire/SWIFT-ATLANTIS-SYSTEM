@@ -258,7 +258,7 @@ class ProjectsSlideshow extends Component
         'title'    => 'Samaya & Lamaya Resorts',
         'location' => 'Marsa Alam, Red Sea, Egypt',
         'category' => 'Resort',
-        'image'    => '',
+        'image'    => 'Images/PROJECTS-COVER-PHOTO/empty.jpg',
         'desc'     => 'Twin luxury resort developments — Samaya and Lamaya — under Travco Group in Marsa Alam, Red Sea. A dual-resort project showcasing extensive experience in large-scale hospitality construction.',
         'stats'    => [
             ['value' => '2',     'label' => 'Resorts'],
@@ -287,7 +287,7 @@ class ProjectsSlideshow extends Component
         'title'    => 'Residential Villa',
         'location' => 'Jabal Ali Hills, Saih Shuaib 1, Dubai, UAE',
         'category' => 'Residential',
-        'image'    => '',
+        'image'    => 'Images/PROJECTS-COVER-PHOTO/empty.jpg',
         'desc'     => 'A B+G+1 luxury residential villa at Plot No. 5131647, Jabal Ali Hills, Saih Shuaib 1 — a contemporary high-spec private residence established by Swift Atlantis Contracting LLC.',
         'stats'    => [
             ['value' => 'B+G+1',    'label' => 'Floors'],
@@ -299,7 +299,7 @@ class ProjectsSlideshow extends Component
         'title'    => '28 Villas – AlQutaina Compound',
         'location' => 'AlQutaina Governmental Residential Compound, Sharjah, UAE',
         'category' => 'Residential',
-        'image'    => '',
+        'image'    => 'Images/PROJECTS-COVER-PHOTO/empty.jpg',
         'desc'     => 'Establishment of 28 G+1 villas within the AlQutaina Governmental Residential Compound in Sharjah (366 Villas total), under the Sharjah Housing Programme. Consultant: Sharjah Housing Programme.',
         'stats'    => [
             ['value' => '28',     'label' => 'Villas'],
@@ -312,7 +312,7 @@ class ProjectsSlideshow extends Component
         'title'    => '96 Villas – Damac Lagoons',
         'location' => 'Damac Lagoons, Dubai, UAE',
         'category' => 'Residential',
-        'image'    => '',
+        'image'    => 'Images/PROJECTS-COVER-PHOTO/empty.jpg',
         'desc'     => 'Construction of 96 villas at Damac Lagoons, Dubai — an ongoing high-profile villa community project under Consultant Jouzy Consulting Engineers, currently under construction by Swift Atlantis Contracting LLC.',
         'stats'    => [
             ['value' => '96',   'label' => 'Villas'],
