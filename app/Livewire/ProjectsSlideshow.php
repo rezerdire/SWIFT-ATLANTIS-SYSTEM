@@ -142,7 +142,7 @@ class ProjectsSlideshow extends Component
         'title'    => '11 Residential Buildings',
         'location' => 'Meydan One, Nadd Al Sheba, Dubai, UAE',
         'category' => 'Residential',
-        'image'    => 'Images/PROJECTS-COVER-PHOTO/11.jpeg',
+        'image'    => 'Images/PROJECTS-COVER-PHOTO/empty.jpg',
         'desc'     => 'An ambitious 11-building residential complex ranging from 2B+G+7 to 2B+G+10 floors in the prestigious Meydan One community, Nadd Al Sheba — a major multi-building development requiring highly coordinated scheduling and delivery.',
         'stats'    => [
             ['value' => '11',    'label' => 'Buildings'],
@@ -274,7 +274,7 @@ class ProjectsSlideshow extends Component
         'title'    => '10 Villas – MBR City District One',
         'location' => 'Mohamed Bin Rashid Al Maktoum City, District One, Phase 3B, Dubai, UAE',
         'category' => 'Residential',
-        'image'    => 'Images/PROJECTS-COVER-PHOTO/21.jpeg',
+        'image'    => 'Images/PROJECTS-COVER-PHOTO/21.png',
         'desc'     => 'Construction of 10 G+1 luxury villas at Mohamed Bin Rashid Al Maktoum City, District One, Phase 3B — one of Dubai\'s most prestigious villa communities, established by Swift Atlantis Contracting LLC.',
         'stats'    => [
             ['value' => '10',   'label' => 'Villas'],
