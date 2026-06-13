@@ -5,14 +5,15 @@
     <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] h-[72px] bg-navy/90 backdrop-blur-md border-b border-white/[0.07]">
 
         {{-- Logo --}}
-        <a href="#" class="flex items-center gap-3 no-underline">
-            <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="20,4 36,34 4,34" fill="none" stroke="white" stroke-width="2"/>
-                <rect x="16" y="16" width="8" height="18" fill="#2589e8"/>
-                <rect x="12" y="20" width="4" height="14" fill="#4fb3e8" opacity="0.6"/>
-                <rect x="24" y="22" width="4" height="12" fill="#4fb3e8" opacity="0.6"/>
-                <path d="M14 28 Q20 24 26 28" stroke="white" stroke-width="1" fill="none"/>
-            </svg>
+        <a href="#" class="flex items-center gap-1 no-underline">
+       <div class="w-[60px] h-[60px] flex items-center justify-center shrink-0 mt-2">
+    <img
+        src="Images/logo/logo-swift.png"
+        alt="Swift Atlantis Logo"
+        class="nav-logo-img-default"
+    />
+</div>
+            
             <div class="flex flex-col leading-none">
                 <span class="font-condensed text-base font-bold tracking-[0.08em] text-white">Swift Atlantis</span>
                 <span class="text-[10px] font-light tracking-[0.2em] text-sky uppercase">Contracting L.L.C</span>
